@@ -5,8 +5,8 @@ const Search = (props) => {
         <div>
             <h2>Search: </h2>
             <form onSubmit={props.handleSubmit}>
-                <input type="text" name="query" onChange={props.handleInput} value={props.query} placeholder="search" />
-                <button type="submit" value="Submit">Search</button>
+                <input type="text" onChange={props.onChange} value={props.value} placeholder="search" />
+                <button type="submit">Search</button>
             </form>
         </div>
     )
